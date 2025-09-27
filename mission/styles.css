@@ -31,7 +31,7 @@ ol li{
     margin-bottom: 10px;
 }
 
-#content{
+main{
     margin: 0 auto;
     max-width: 600px;
 
@@ -46,4 +46,8 @@ img{
     margin: 50px auto;
     width: 150px;
     
+}
+.dark{
+    color: white;
+    background-color: rgb(34, 34, 34);
 }
