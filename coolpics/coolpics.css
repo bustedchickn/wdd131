@@ -1,0 +1,151 @@
+ @import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+ :root {
+ --primary-color: #52489c;
+ --secondary-color: #59c3c3;
+ --accent-color: #f45b69;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: Mooli, san-serif;
+ }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    background-color: #e5e5e5;
+}
+header{
+    background: var(--primary-color);
+    color:var(--text-light);
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+footer{
+    background: var(--primary-color);
+    color: var(--text-light);
+    margin-top: 10px;
+    padding: 5px;
+    
+}
+
+footer p{
+    padding-left: 50px;
+}
+
+
+header h1 {
+    margin: 0;
+    padding: 1rem;
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 90%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0.5rem 0;
+}
+
+nav a {
+    color: var(--text-light);
+}
+a:link,
+a:visited {
+  color: var(--text-light);
+}
+
+nav p {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+
+
+main {
+    padding: 1rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+
+
+
+
+figure{
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 8px solid white;
+    box-shadow: 8px 8px 8px rgb(68, 68, 68);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+}
+
+.gallery{
+    align-items: center;
+}
+
+
+@media (min-width: 600px) {
+    nav ul{
+        display: none;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+    }
+    
+}
+
+@media (min-width: 900px) {
+    nav ul{
+        display: none;
+    }
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        display: grid;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center; 
+        align-items: center;     
+        
+        gap: 40px;                
+        
+    }
+
+    nav p{
+        display: none;
+    }
+
+    nav li {
+        display: inline-block; 
+        margin-right: 40px;
+        margin-left: 40px; 
+    }
+    
+}
