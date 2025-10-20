@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+:root {
+  --gold-color: #efc69b;
+  --red-color: #af1b3f;
+  --dark-color: #473144;
+  --body-font: Helvetica, Arial, sans-serif;
+  --headline-font: serif, Impact, Mooli;
+}
+body {
+  font-family: var(--body-font);
+}
+header{
+    margin: 0 auto;
+    max-width: 900px;
+    margin-bottom: 20px;
+}
+nav{
+    border-top: 2px solid var(--gold-color);
+    justify-content: end;
+    justify-items: right;
+    border-bottom: 2px solid var(--gold-color);
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 70px 80px 80px;
+    
+
+}
+nav ul li{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+h1 {
+  color: var(--dark-color);
+  font-family: var(--headline-font);
+  text-align: center;
+  font-weight: 200;
+  text-emphasis: none;
+  
+}
+
+h2 {
+  color: var(--red-color);
+  font-family: var(--headline-font);
+  font-weight: 200;
+  text-emphasis: none;
+  text-align: center;
+}
+hr {
+  height: 1px;
+  background-color: var(--gold-color);
+}
+main {
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 1rem;
+  align-items: start;
+}
+.book{
+    /* background-color: #efc69b; */
+    display:grid;
+    grid-template-columns: 150px 1fr;
+    
+    margin-bottom: 50px;
+}
+.filter-form{
+    border: 2px solid var(--gold-color);
+}
+.book-info{
+    text-align: right;
+    padding:  0 20px;
+    border-right: 1px solid var(--gold-color);
+    
+}
+.book-view{
+    border-left: 1px solid var(--gold-color);
+    padding:  0 20px;
+}
+
+.book-view img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
