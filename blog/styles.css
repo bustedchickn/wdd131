@@ -8,11 +8,15 @@
 }
 body {
   font-family: var(--body-font);
+  color: var(--dark-color);
 }
 header {
   margin: 0 auto;
   max-width: 900px;
   margin-bottom: 20px;
+}
+.date{
+  font-size: larger;
 }
 nav {
   border-top: 2px solid var(--gold-color);
@@ -42,8 +46,10 @@ h2 {
   color: var(--red-color);
   font-family: var(--headline-font);
   font-weight: 400;
+  font-size: xx-large;
   text-emphasis: none;
   text-align: center;
+  margin-top: 9px;
 }
 hr {
   height: 1px;
