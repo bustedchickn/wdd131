@@ -1,25 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Recipes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <meta name="author" content="Talmage Kay" />
-    <meta name="description" content="See these cool recipes" />
+    <meta name="description" content="See these cool recipes." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="recipes.css" />
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <script defer type="module" src="main.js"></script>
-    <meta property="og:title" content="BYUI Tour Signup">
-  <meta property="og:description" content="Sign up for Walk Your Schedule Tours at BYU-Idaho.">
-  <meta property="og:image" content="https://wyst-7fe74.web.app/htmlpics/WYSTlogo.png">
-  <meta property="og:url" content="https://wyst-7fe74.web.app/">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="BYUI Tour Signup">
-  <meta name="twitter:description" content="Sign up for Walk Your Schedule Tours at BYU-Idaho.">
-  <meta name="twitter:image" content="https://wyst-7fe74.web.app/htmlpics/WYSTlogo.png">
-</head>
-<body>
-    
-</body>
+    <meta property="og:title" content="Recipe Book" />
+    <meta property="og:description" content="See these cool recipes." />
+    <meta
+      property="og:image"
+      content="https://bustedchickn.github.io/wdd131/recipes/images/recipe-book.png"
+    />
+    <meta
+      property="og:url"
+      content="https://bustedchickn.github.io/wdd131/recipes/"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Recipe Book" />
+    <meta name="twitter:description" content="See these cool recipes." />
+    <meta
+      name="twitter:image"
+      content="https://bustedchickn.github.io/wdd131/recipes/images/recipe-book.png"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="title">
+        <img src="images/recipe-book.png" alt="recipe-book icon" />
+        <h1>Recipe Book</h1>
+      </div>
+
+      <section class="search-field">
+        <form>
+          <input type="text" placeholder="Find a recipe" />
+          <button id="search" type="submit">
+            <img src="images/search.svg" alt="search" />
+          </button>
+        </form>
+      </section>
+    </header>
+    <main>
+      <section class="recipe-card">
+        <img
+          src="./images/sweet-potato-waffle-md.jpg"
+          alt="sweet potato waffles"
+          id="recipe-img"
+        />
+        <div class="recipe-info">
+          <p id="recipe-tag">Side</p>
+          <h2 id="recipe-title">Sweet Potato Waffles</h2>
+          <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star-empty">⭐</span>
+            <span aria-hidden="true" class="icon-star-empty">☆</span>
+          </span>
+          <p id="recipe-description">
+            Savory waffles made with Sweet potato with a hint of Ginger.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="social">
+        <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+        <a href="#"
+          ><img src="images/instagram_icon.svg" alt="instagram icon"
+        /></a>
+        <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon" /></a>
+        <a href="#"
+          ><img src="images/pinterest_icon.svg" alt="pinterest icon"
+        /></a>
+      </div>
+      <a
+        id="credit"
+        href="https://www.flaticon.com/free-icons/recipe"
+        title="recipe icons"
+        >Recipe icons created by Freepik - Flaticon</a
+      >
+    </footer>
+  </body>
 </html>
