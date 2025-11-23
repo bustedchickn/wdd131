@@ -135,7 +135,7 @@ const recipes = [
 		isBasedOn: '',
 		cookTime: '30 min',
 		datePublished: '2018-09-19',
-		tags: ['chicken', 'entree', 'Indian'],
+		tags: ['chicken','Indian' , 'entree'],
 		description:
 			'Quick and easy Chicken curry recipe made with easy to find ingredients.',
 		image: './images/chicken-curry.webp',
@@ -207,7 +207,7 @@ const recipes = [
 		isBasedOn: '',
 		cookTime: '45min',
 		datePublished: '2023-10-10',
-		tags: ['dessert', 'German'],
+		tags: ['German','dessert'],
 		description:
 			"This gooseberry cake with crumble is easy to follow, a bit tart and not too sweet. Made up of a cake base, filled with fresh gooseberries and vanilla cream and finished off with crumble that's flavored with vanilla. A must have recipe for gooseberry lovers!!",
 		image: './images/german-gooseberry-cake.jpg',

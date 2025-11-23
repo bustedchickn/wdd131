@@ -126,6 +126,17 @@ footer img {
     display: none;
 }
 
+.rating {
+  display: inline-flex;
+  gap: 2px;
+  font-size: 1.2rem;
+}
+
+.star-half {
+  color: gold;
+  position: relative;
+}
+
 @media (min-width: 700px) {
     body{
         width: 90%;
