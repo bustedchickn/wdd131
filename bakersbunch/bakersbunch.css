@@ -8,7 +8,7 @@
   --accent2-color: #FFF6E9;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "French Canon", sans-serif;
+  --heading-font: "Fredoka One", sans-serif;
   --paragraph-font: "Quicksand", sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
@@ -32,6 +32,8 @@ nav{
     height: 30px;
     color: var(--nav-background-color);
     margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
 }
 nav a {
     text-decoration: none;
@@ -51,6 +53,29 @@ main{
 }
 header{
     background: var(--primary-color);
+}
+p{
+    font-family: var(--paragraph-font);
+    width: fit-content;
+    margin: 10px auto;
+}
+#hero-img{
+    width: 20%;
+}
+#hero-txt{
+    color: var(--accent2-color);
+    text-shadow: black 2px 2px 2px;
+    font-size: 2rem;
+    display: inline;
+    
+}
+.center-p{
+    width: 90%;
+    font-size: 1.5rem;
+    margin: 10px auto;
+}
+#menu-p{
+    line-height: 3rem;
 }
 
 .emphasis {
@@ -75,6 +100,25 @@ header{
     animation: rainbow_animation 6s linear infinite; /* Adjust duration (e.g., 6s) to control speed */
 }
 
+#menu-snapshot{
+    width: 50%;
+    margin: 10px auto;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+.menu-card{
+    width: 80%;
+    box-shadow: black 5px 5px 5px;
+    margin:10px auto;
+    border-radius: 25%;
+}
+.baking-pic{
+    width: 100%;
+    border-radius: 25%;
+
+}
+
+
 @keyframes rainbow_animation {
     0%, 100% {
         background-position: 0 0; /* Start position */
@@ -82,4 +126,17 @@ header{
     50% {
         background-position: 100% 0; /* End position, moving the gradient across */
     }
+}
+
+@media (min-width : 700px) {
+    #hero-txt{
+    color: var(--accent2-color);
+    text-shadow: black 2px 2px 2px;
+    font-size: 7rem;
+    display: inline;
+    /* margin-top:  ; */
+}
+.center-p{
+    width: 70%;
+}
 }
