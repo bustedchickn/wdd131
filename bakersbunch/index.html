@@ -16,7 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="bakersbunch.css" />
     <meta charset="UTF-8" />
@@ -56,29 +59,42 @@
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
         <a href="about-us.html">Our team</a>
-        <a href="contact-us.html">Contact Us</a>
+        <!-- <a href="contact-us.html">Contact Us</a> -->
       </nav>
     </header>
     <main>
-      <h1>Welcome</h1>
-      <p class="center-p">
+      <h1 id="indexTitle">Welcome</h1>
+      <img
+        src="assets/cookie_1.png"
+        alt="A strange cookie"
+        id="mystery-cookie"
+        style="width: 120px; cursor: pointer; display: block; margin: 2rem auto"
+      />
+
+      <p id="cookie-text" class="center-p"></p>
+
+      <p class="center-p" id="indexText">
         Welcome to <strong class="emphasis">Bakers Bunch</strong>, the sweetest
         spot in town! We’re a cozy, family-run bakery known for fresh pastries,
         warm smiles, and our legendary buttercream frosting.
       </p>
       <section id="menu-snapshot">
         <div class="menu-card">
-          <img src="assets/franklinh.png" alt="menuitem" class="baking-pic"/>
+          <img src="assets/franklinh.png" alt="menuitem" class="baking-pic" />
         </div>
         <div class="menu-card">
-          <img src="assets/emmah.png" alt="menuitem" class="baking-pic"/>
+          <img src="assets/emmah.png" alt="menuitem" class="baking-pic" />
         </div>
         <div class="menu-card">
-          <img src="assets/gastonh.png" alt="menuitem" class="baking-pic"/>
+          <img src="assets/gastonh.png" alt="menuitem" class="baking-pic" />
         </div>
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <button id="reset-state" style="margin: 1rem">
+        Reset Site (Testing)
+      </button>
+    </footer>
   </body>
 </html>

@@ -2,10 +2,10 @@
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #4A78A6;
-  --secondary-color: #F2A7C1;
-  --accent1-color: #B5334A;
-  --accent2-color: #FFF6E9;
+  --primary-color: #4a78a6;
+  --secondary-color: #f2a7c1;
+  --accent1-color: #b5334a;
+  --accent2-color: #fff6e9;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Fredoka One", sans-serif;
@@ -27,116 +27,191 @@
   --nav-hover-background-color: var(--primary-color);
 }
 
-nav{
-    background-color: var(--accent1-color);
-    height: 30px;
-    color: var(--nav-background-color);
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
+nav {
+  background-color: var(--accent1-color);
+  height: 30px;
+  color: var(--nav-background-color);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 nav a {
-    text-decoration: none;
-    color: var(--accent2-color);
+  text-decoration: none;
+  color: var(--accent2-color);
+  font-size: larger;
+  font-weight: 800;
 }
 
-h1{
-    font-family: var(--heading-font);
-    padding: 10px;
-    margin-top: 0px;
-    text-align: center;
+h1 {
+  font-family: var(--heading-font);
+  padding: 10px;
+  margin-top: 0px;
+  text-align: center;
 }
-main{
-    background-color: var(--accent2-color);
-    height: 100%;
-    margin: 0 auto;
+main {
+  /* background-color: var(--accent2-color); */
+  height: 100%;
+  margin: 0 auto;
 }
-header{
-    background: var(--primary-color);
+header {
+  background: var(--primary-color);
 }
-p{
-    font-family: var(--paragraph-font);
-    width: fit-content;
-    margin: 10px auto;
+p {
+  font-family: var(--paragraph-font);
+  width: fit-content;
+  margin: 10px auto;
 }
-#hero-img{
-    width: 20%;
+#hero-img {
+  width: 20%;
+  margin-left: 1rem;
 }
-#hero-txt{
-    color: var(--accent2-color);
-    text-shadow: black 2px 2px 2px;
-    font-size: 2rem;
-    display: inline;
-    
+#hero-txt {
+  color: var(--accent2-color);
+  text-shadow: black 2px 2px 2px;
+  font-size: 2rem;
+  display: inline;
 }
-.center-p{
-    width: 90%;
-    font-size: 1.5rem;
-    margin: 10px auto;
+.center-p {
+  width: 90%;
+  font-size: 1.5rem;
+  margin: 10px auto;
 }
-#menu-p{
-    line-height: 3rem;
+#menu-p {
+  line-height: 3rem;
 }
 
 .emphasis {
-    font-size: 2rem;
-    /* font-weight: bold;
+  font-size: 2rem;
+  /* font-weight: bold;
     letter-spacing: 5px; */
-    
-    /* 1. Define the rainbow gradient */
-    background: linear-gradient(to right, #ff0000, #ff9900, #ffff00, #00ff00, #0099ff, #6666ff, #ff00ff);
-    
-    /* 2. Set a large background size to allow movement */
-    background-size: 400% 100%;
-    
-    /* 3. Clip the background to the text shape */
-    -webkit-background-clip: text;
-    background-clip: text;
-    
-    /* 4. Make the actual text color transparent */
-    color: transparent;
-    
-    /* 5. Apply the animation */
-    animation: rainbow_animation 6s linear infinite; /* Adjust duration (e.g., 6s) to control speed */
+
+  /* 1. Define the rainbow gradient */
+  background: linear-gradient(
+    to right,
+    #ff0000,
+    #ff9900,
+    #ffff00,
+    #00ff00,
+    #0099ff,
+    #6666ff,
+    #ff00ff
+  );
+
+  /* 2. Set a large background size to allow movement */
+  background-size: 400% 100%;
+
+  /* 3. Clip the background to the text shape */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* 4. Make the actual text color transparent */
+  color: transparent;
+
+  /* 5. Apply the animation */
+  animation: rainbow_animation 6s linear infinite; /* Adjust duration (e.g., 6s) to control speed */
 }
 
-#menu-snapshot{
-    width: 50%;
-    margin: 10px auto;
-    /* display: flex; */
-    /* justify-content: space-between; */
+#menu-snapshot {
+  width: 50%;
+  margin: 10px auto;
+  /* display: flex; */
+  /* justify-content: space-between; */
 }
-.menu-card{
-    width: 80%;
-    box-shadow: black 5px 5px 5px;
-    margin:10px auto;
-    border-radius: 25%;
+.menu-card {
+  width: 80%;
+  box-shadow: black 5px 5px 5px;
+  margin: 10px auto;
+  border-radius: 25%;
 }
-.baking-pic{
-    width: 100%;
-    border-radius: 25%;
+.baking-pic {
+  width: 100%;
+  border-radius: 25%;
+}
 
+.baker-card {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1.5rem;
 }
 
+.baker-card img {
+  width: 70%;
+  
+}
 
 @keyframes rainbow_animation {
-    0%, 100% {
-        background-position: 0 0; /* Start position */
-    }
-    50% {
-        background-position: 100% 0; /* End position, moving the gradient across */
-    }
+  0%,
+  100% {
+    background-position: 0 0; /* Start position */
+  }
+  50% {
+    background-position: 100% 0; /* End position, moving the gradient across */
+  }
+}
+@media (max-width: 600px) {
+  .baker-card {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
-@media (min-width : 700px) {
-    #hero-txt{
+
+@media (min-width: 700px) {
+  #hero-txt {
     color: var(--accent2-color);
     text-shadow: black 2px 2px 2px;
     font-size: 7rem;
     display: inline;
     /* margin-top:  ; */
-}
-.center-p{
+  }
+  .center-p {
     width: 70%;
+  }
+  #hero-img {
+    width: 200px;
+    margin-left: 2rem;
+  }
 }
+
+/* ===== SITE STATES ===== */
+
+/* 1 — Normal */
+.state-1 {
+  background-color: #fff6e5;
+}
+
+/* 2 — Mystery starts */
+.state-2 {
+  background-color: #f3e3c3;
+  filter: saturate(0.9);
+}
+
+.state-2 header {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* 3 — Scary */
+.state-3 {
+  background-color: #2b2b2b;
+  color: #f0eaea;
+}
+
+.state-3 nav a {
+  color: #f0eaea;
+}
+
+.state-3 img {
+  filter: grayscale(0.6) contrast(1.1);
+}
+
+/* 4 — Repaired */
+.state-4 {
+  background-color: #e7f3e7;
+}
+
+.state-4 img {
+  filter: none;
 }
